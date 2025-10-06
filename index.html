@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مینی اپ نمونه</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 مینی اپ نمونه</h1>
+            <p>به مینی اپ ما خوش آمدید!</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <h2>فرم نمونه</h2>
+                <form id="sampleForm">
+                    <div class="form-group">
+                        <label for="userInput">متن خود را وارد کنید:</label>
+                        <input type="text" id="userInput" placeholder="یک متن بنویسید...">
+                    </div>
+                    <button type="submit">ارسال به سرور</button>
+                </form>
+                <div id="result" class="result"></div>
+            </div>
+
+            <div class="card">
+                <h2>داده از سرور</h2>
+                <button onclick="fetchData()">دریافت داده</button>
+                <div id="apiData" class="result"></div>
+            </div>
+
+            <div class="card">
+                <h2>امکانات</h2>
+                <ul id="featuresList"></ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>ساخته شده با ❤️ برای تلگرام</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
