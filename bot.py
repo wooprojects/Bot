@@ -4,7 +4,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
 # تنظیمات
-BOT_TOKEN = os.environ.get('BOT_TOKEN')
+BOT_TOKEN = os.environ.get('8211985796:AAEYSO5w0xT-dNeFT8PTuqcntKGEmJWr9Wc')
 MINIAPP_URL = os.environ.get('MINIAPP_URL', '')  # بعد از دیپلوی تنظیم می‌شود
 
 # لاگینگ
